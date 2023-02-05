@@ -1,0 +1,171 @@
+body{font-family: 'Montserrat', sans-serif; font-size: 16px;
+    background-color : rgb(255, 255, 255);
+    color : #202020;
+  }
+
+a{text-decoration: none;}
+
+h1,h2,h3,h4,h5, p{color: rgb(255, 255, 255);}
+
+p{line-height: 20px;color: #666; font-weight: 300;}
+
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 50px;}
+.normal-text{font-size: 35px;}
+.small-text{font-size: 20px;}
+
+.button{padding: 15px 15px; background: #31676C; color:rgb(255, 255, 255); display: inline-block; 
+border-radius: 60px; font-size: 20px;}
+.button:active, .button:hover{background-color: #EE7513; color:rgb(255, 255, 255); }
+
+ul {list-style-type: none;}    
+
+/* ! header */
+.cont-header{
+    background-color: #ffffff;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 150px;
+    z-index: 3000;
+    }
+
+.head1 {
+background-image: #fff;
+display: block;
+    position: relative;
+    width: 100%;
+    height: 62px;
+    }
+
+.header{
+width: 100px;
+top:0;
+padding: 30px;
+display: flex;
+max-width: 1350px; 
+z-index: 200;
+background-image: #fff;
+}
+
+.logo{z-index: 200;
+margin-left: 15px;}
+
+.menu{
+    width: 100px;
+    z-index: 3000;
+    }
+
+.menu{
+    display: flex;
+    float: left;
+}
+
+.menu li a{
+color: #31676C;    
+padding: 15px;
+display: block;
+font-size: 20px;
+
+}
+
+.menu li a:active,.menu li a:hover{
+    color: #EE7513;    
+   }
+
+/* ! banner */
+.hero{
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    background-size: cover;
+    background: url('FOTO-bn.png') no-repeat center center;
+ }
+
+ .hero_content{
+    width: 100%; 
+    max-width: 1350px;
+    margin: 0 50px ;
+    position: relative;}
+
+
+/* ! box testi */ 
+.tit {
+color: #31676C;
+text-align: center;
+font-size: 40px;
+}
+.text1{
+text-align: justify;
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+
+/* ! box creazioni */ 
+@media (max-width: 767px)
+.blocco_servizi {
+    padding: 50px 0;
+}
+.blocco_servizi {
+    max-width: 1366px;
+    width: 100%;
+    font-family: "Montserrat";
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.blocco_servizi--header {
+    text-align: center;
+    padding: 10px;
+}
+
+.blocco_servizi--header-subtitle {
+    font-size: 1.143rem;
+    color: #000;
+}
+
+@media (max-width: 767px)
+.blocco_servizi--container {
+    justify-content: normal;
+    padding: 20px 10px;
+}
+.blocco_servizi--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0 0 0;
+}
+
+@media (max-width: 767px)
+.blocco_servizi--container--box {
+    width: 48%;
+}
+
+.blocco_servizi--container--box {
+    width: 23%;
+    margin: 10px 1% 0;
+    height: 140px;
+    border-radius: 16px;
+    background-color: #bfbfbf;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease-in;
+}
+
+
+.blocco_servizi--container--box:active, .blocco_servizi--container--box:hover{
+box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.23), 0 10px 10px 0 rgba(0, 0, 0, 0.208);}
+
+.blocco_servizi--container--box-image {
+    cursor: pointer;
+}
