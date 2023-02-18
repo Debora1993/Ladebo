@@ -130,26 +130,17 @@ margin-right: 100px;
     color: #000;
 }
 
-@media (max-width: 767px)
-.blocco_servizi--container {
-    justify-content: normal;
-    padding: 20px 10px;
-}
+
 .blocco_servizi--container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    padding: 15px 0 0 0;
-}
-
-@media (max-width: 767px)
-.blocco_servizi--container--box {
-    width: 48%;
+    padding: 20px 0 0 0;
 }
 
 .blocco_servizi--container--box {
-    width: 23%;
+    width: 20%;
     margin: 10px 1% 0;
     height: 140px;
     border-radius: 16px;
