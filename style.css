@@ -106,10 +106,7 @@ margin-right: 100px;
 
 
 /* ! box creazioni */ 
-@media (max-width: 767px)
-.blocco_servizi {
-    padding: 50px 0;
-}
+
 .blocco_servizi {
     max-width: 1366px;
     width: 100%;
@@ -160,3 +157,65 @@ box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.23), 0 10px 10px 0 rgba(0, 0, 0, 0.208
 .blocco_servizi--container--box-image {
     cursor: pointer;
 }
+
+
+div#container {
+    width: 100%;
+    text-align: center;
+}
+div.split2 div {
+    float: left;
+    width: 50%;
+}
+
+div.wide {
+    clear: center;
+}
+
+.box-creazioni2{
+text-align: justify; 
+width: 100%;
+text-align: center;
+}
+
+
+
+#galleria{
+	text-align: center;
+	width: 100%;
+    border-radius: 20px;
+
+}
+
+.immagine{
+	display: inline-block;
+	width: 25%;
+	margin: 10px 1%;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+
+.preview{
+	width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+	.immagine{
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px){
+	.immagine{
+		width: 47%;
+	}
+}
+
+@media (max-width: 1020px) and (min-width: 720px){
+	.immagine{
+		width: 30%;
+	}
+}
+
