@@ -43,87 +43,106 @@
         <div class="blocco_servizi--header-subtitle"></div>
         </div>
     
-    <div class="blocco_servizi--container"> 
+        <div id="galleria">
+            <div class="immagine">
+                    <img class="preview" src="creaz1.png">
+                    <p style="font-weight: bold; color: #31676C;">Ricami</p>
+            </div>
+            <div class="immagine">
+                    <img class="preview" src="creaz2.png">
+                    <p style="font-weight: bold; color: #31676C;">Gioelli</p>
+            </div>
+            <div class="immagine">
+                    <img class="preview" src="creaz3.png">
+                    <p style="font-weight: bold; color: #31676C;">Accessori</p>
+            </div>
+        
+            
+        </div> 
     
-        <div class="blocco_servizi--container--box" style="background: url('c-tit.png');">
-
-            <a href="aggiungere un fermo pagina">
-                <div class="blocco_servizi--container--box-image">                                     
-                </div>
-                <div class="blocco_servizi--container--box-title">
-                    <h3>Ricami</h3>
-                </div>
-            </a>
-        </div>
-       
-        <div class="blocco_servizi--container--box" style="background: url('g-tit.png');">
-            <a href="aggiungere un fermo pagina">
-                <div class="blocco_servizi--container--box-image">                                     
-                </div>
-                <div class="blocco_servizi--container--box-title">
-                    <h3>Gioielli</h3>
-                </div>
-            </a>
-        </div>
-    
-        <div class="blocco_servizi--container--box" style="background: url('a-tit.png');">
-            <a href="aggiungere un fermo pagina">
-                <div class="blocco_servizi--container--box-image">                                     
-                </div>
-                <div class="blocco_servizi--container--box-title">
-                    <h3>Accessori</h3>
-                </div>
-            </a>
-        </div>
-
-    </div>
 
 <div style="padding-top: 100px;"></div>
 
-<!--
-<div class="container">
-    <div class="split2">
-       <div style="width: 500px;">
-        <img src="creaz1.png" style= "height:200px; width:400px; border-radius: 20px;">
-        <h3 style="color: #31676C; text-align:center;">"Chiedimi se sono felice</h3>
-        <p class= "box-creazioni2">Ricamo realizzato con tecnica "punto indietro", fili DMC con variazione di colore sulle tonalità del blu.</p>
-       </div>
-       <div style="width: 500px;">
-        <img src="creaz1.png" style= "height:200px; width:400px; border-radius: 20px;">
-        <h3 style="color: #31676C; text-align:center;">"Chiedimi se sono felice</h3>
-        <p class= "box-creazioni2">Ricamo realizzato con tecnica "punto indietro", fili DMC con variazione di colore sulle tonalità del blu.</p>
-       </div>
-</div>
-</div>
--->
+
+<div style="padding-top: 50px;"></div>
+
+
+<!--Slideshow container-->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+<img src="s_ric1.png" style="width:100%">
+<div class="text">Dediche su borse</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="s_ric2.png" style="width:100%">
+      <div class="text">Frasi su portatrucco </div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="s_ric3.png" style="width:100%">
+      <div class="text">Linee su abiti</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="s_ric4.png" style="width:100%">
+        <div class="text">Calzini d'amore</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="s_ric5.png" style="width:100%">
+        <div class="text">Iniziale su scrunchies</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="s_ric6.png" style="width:100%">
+        <div class="text">Doppia su scrunchies</div>
+      </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
 </section>
-
-
-
-
-
-<div id="galleria">
-	<div class="immagine">
-			<img class="preview" src="creaz1.png">
-			<p>Ricamo</p>
-	</div>
-	<div class="immagine">
-			<img class="preview" src="creaz2.png">
-			<p>Titolo Immagine</p>
-	</div>
-	<div class="immagine">
-			<img class="preview" src="creaz3.png">
-			<p>Titolo Immagine</p>
-	</div>
-	<div class="immagine">
-			<img class="preview" src="creaz1.png">
-			<p>Titolo Immagine</p>
-	</div>
-	
-</div>
-
-
-
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if(n > slides.length) {
+        slideIndex = 1
+      }
+      if(n < 1) {
+        slideIndex = slides.length
+      }
+      for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for(i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
 
 
 <section style="background-color: #31676C; height:60px; margin-top: 0px;">
